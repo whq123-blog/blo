@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详细页</title>
+</head>
+<body>
+<h1>{{book.btitle}}</h1><!--view 字典数据来填该模板的坑-->
+<ul>
+    {%for hero in book.heroinfor_set.all%}
+    <li>{{hero.hname}}--------{{hero.hcontent}}</li>
+    {%endfor%}
+</ul>
+</body>
+</html>
